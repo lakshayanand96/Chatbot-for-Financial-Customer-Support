@@ -1,0 +1,254 @@
+version: '3.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- online_card_payment
+- money_limit
+- difference_available_ledger_balance
+- pending_and_upcoming_transactions
+- Direct_debits
+- Standing_orders
+- change_contact_details
+- dispute_transaction
+- IBAN_BIC
+- Cash_machine
+- first_name
+- last_name
+- greet
+- goodbye
+- bot_challenge
+- thanks
+- storedatabase
+- affirm
+- deny
+- Credit_cards
+- Loans
+- Overdrafts
+- Mortgages
+- Savings
+- Current Accounts
+- International_Services
+- options_account
+- options_product_Lending
+- options_Product_Lending
+- options_cheques
+- options_product
+- options_Pay_transfer
+- options_Payments
+- options_Declines
+- options_Decline
+- options_disputes
+- options_disputes_ND
+- options_disputes_ED
+- options_fees
+- options_Fee
+- options_Fee/charges
+- options_charges
+- options_savings
+- options_statements
+- options_Cards
+- options_Cards_AC
+- options_Cards_Pin
+- options_Personal_loan
+- options_Different_query
+- options_Credit_Cards
+entities:
+
+- firstname
+- lastname
+
+slots:
+  firstname:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: firstname
+  lastname:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: lastname
+
+responses:
+  utter_greet:
+  - text: Hi I'm Lakshay, your virtual assistant. I help customers like you with their everyday banking queries. Please enter your First name!
+  utter_LName:
+  - text: Now enter your last name.
+  utter_to_ask:
+  - text: Would you like me to save your first name and last name?
+  utter_intro:
+  - text: How i can help you today, you can directly ask a question or choose one of the options below {firstname}?
+  utter_anythingelse:
+  - text: Would you like to know anything else?
+    buttons:
+    - title: "Yes"
+      payload: /affirm
+    - title: "No"
+      payload: /deny
+  utter_choice:
+  - text: "Please select your query from the options below"
+    buttons:
+    - title: "Account servicing"
+      payload: /options_account
+    - title: "Product & Lending"
+      payload: /options_Product_Lending
+    - title: "Payments"
+      payload: /options_Payments
+    - title: "Cards"
+      payload: /options_Cards
+    - title: "Disputes"
+      payload: /options_disputes
+  utter_options_account:
+  - text: "Would you like to know about"
+    buttons:
+      - title: "Cards"
+        payload: /options_Cards
+      - title: "Cheques"
+        payload: /options_cheques
+      - title: "Fees"
+        payload: /options_fees
+      - title: "Savings"
+        payload: /options_savings
+      - title: "Statements"
+        payload: /options_statements
+      - title: "Different query"
+        payload: /options_Different_query
+  utter_cards:
+  - text: "LOW RATE CREDIT CARD - A low rate credit card typically offers a lower interest rate on purchases. This type of credit card can be useful if you think you may have to carry a balance – that’s the money you owe – from one month to another. While these cards have a lower interest rate, you may have to pay an annual fee.
+           REWARDS CREDIT CARD - Some credit cards offer cashback or other rewards for everyday spending, like air miles or shopping vouchers, when you use them. They may have a higher interest rate or an annual fee, so try to work out whether the rewards will outweigh the costs.
+           0% PURCHASE CREDIT CARD - Some cards offer periods of 0% interest on purchases. These can be useful if you plan to buy a big ticket item and pay for it upfront, giving you a fixed period of time to repay without being charged interest. keep in mind that once the 0% interest period ends the purchase interest rate will change. Make sure to look at this so you know what you’re in for down the track.
+           BALANCE TRANSFER CREDIT CARD - Some cards offer 0% interest for a fixed time period for balance transfers from other cards. These allow you to transfer the debt for a small percentage fee of the amount you're transferring. This can be helpful if it means you’ll pay less interest and fees overall Like the 0% purchase card, this 0% interest period will end – so, ideally, you should try to clear your debt before it does. It’s also worth looking at what the rate will change to so you know what you’re in for over the longer term.
+           CREDIT BUILDER CARD - If you have little, or no, credit history because you’ve not borrowed much in the past, then these cards can help you build your credit score. Interest rates may be higher than other types of cards, but you can avoid interest as long as you pay off your balance in full each month.
+           TRAVEL CREDIT CARD - If you travel a lot, a travel credit card can make it cheaper for you to spend money overseas. They usually don’t charge a fee for making purchases or withdrawing cash overseas. Travel credit cards tend to have good exchange rates and some may offer reward points for spending. Interest rates may be higher than other types of cards, but you can avoid interest if you pay off your balance in full each month.
+           A MONEY TRANSFER CREDIT CARD - Lets you move money from your credit card into your current account, for a fee. You may consider a money transfer credit card if you wanted to pay off an overdraft, for example. This is different from a balance transfer credit card, where you move debt from one credit card to another."
+  utter_cheques:
+  - text: You can now pay in a cheque using the Mobile Banking App. The individual cheque limit is £500 and you can pay in up to £750 worth of cheques each day.
+  utter_fees:
+  - text: If you pay for something or withdraw money using your Visa debit card while you're outside the UK, you’ll be charged a 2.75% fee for making a debit card payment in a foreign currency. So, for example, if you spent or took out £100, you'd be charged a fee of £2.75. Any transactions you make will be converted into pound sterling. To make sure your exchange rate is as competitive as possible, you’ll have to pay the exchange rate set by Visa.
+  utter_Savings:
+  - text: When you have some extra cash to set aside each month, our Regular Saver is a great way to help your money grow. You can save up to £3,000 at a 1.00% interest rate that’s fixed for 12 months.
+  utter_statements:
+  - text: Statements will only be generated if you’ve made a payment out of the account, charges and/or interest have been deducted or you have a debit balance. You’ll always get a statement at least once a year. Go to Accounts and choose the relevant account. Choose View more followed by View statements. This will display your available statements. Select the statement you are looking for and press the share button to download.
+  utter_Product_options:
+  - text: Would you like to know about
+    buttons:
+      - title: "Savings"
+        payload: /options_savings
+      - title: "Personal Loan"
+        payload: /options_Personal_loan
+      - title: "Credit Cards"
+        payload: /options_Credit_Cards
+      - title: "Mortgage"
+        payload: /Mortgages
+      - title: "Fees/Charges"
+        payload: /options_Fee_charges
+      - title: "Different query"
+        payload: /options_Different_query
+  utter_Loans:
+  - text: You can apply to borrow from £1,000 to £25,000. If you’re an existing Premier customer, you can apply to borrow up to £50,000. Repayments can be spread over 1 to 5 years for loans of £15,000 or less, or over 1 to 8 years for loans above £15,000.
+  utter_Credit_cards:
+  - text: Select Accounts at the bottom left of your screen. Under the Products & services heading select Credit Card. Scroll through our list of offers until you see the card you’d like to apply for. Select More info and apply and then Apply now.
+  utter_Mortgages:
+  - text: Starting your journey to becoming a homeowner with us is easy. First, you'll need a Decision in Principle – we’ll explain how to do this over the phone or online. Then, we'll let you know what you’ll need to do for your mortgage application. Our mortgage advisers will be happy to offer you advice over the phone.
+  utter_Fees_Charges:
+  - text: You can explore our Fees/Charges about using a card outside the UK, Credit card charges, International payments, Overdraft charges, Investment charges, Other charges on the website.
+  utter_Payments_options:
+  - text: "Would you like to know about"
+    buttons:
+      - title: "Pay & Transfer"
+        payload: /options_Pay_transfer
+      - title: "Declines"
+        payload: /options_Declines
+      - title: "Disputes"
+        payload: /options_disputes
+      - title: "Standing Order"
+        payload: /Standing_orders
+      - title: "Cheques"
+        payload: /options_cheques
+      - title: "Different query"
+        payload: /options_Different_query
+  utter_Pay_transfer:
+  - text: You can pay new and existing payees up to £25,000 per account each day via the Mobile Banking App and Online Banking.
+  - text: In the To menu choose the My payees tab. Select Add new payee. In the pop-up menu choose Add new payee then press Next. Complete the name, sort code, account number and reference. The reference can be anything you choose, with a maximum of 18 characters. Select Check payee details. Enter the payment amount and confirm when you’d like to make the payment. Select Continue.
+  utter_Declines:
+  - text: To send money online, over the phone or in a branch, you'll need the amount you're sending you can pay in sterling or in the local currency the name on the account you’re sending the money to  you'll need to include this in the payment instruction the bank code of the bank you’re sending money to the IBAN or account number of the person or business you’re sending money to.
+  utter_Cards_options:
+  - text: "Would you like to know about"
+    buttons:
+      - title: "Activate card"
+        payload: /option_Cards_AC
+      - title: "Pin reminder"
+        payload: /options_Cards_Pin
+      - title: "Declines"
+        payload: /options_Declines
+      - title: "Disputes"
+        payload: /dispute_transaction
+      - title: "Charges"
+        payload: /options_charges
+      - title: "Different query"
+        payload: /options_Different_query
+  utter_Actiavte_card:
+  - text: The quickest way to activate your new card is through our mobile app or online banking. Make sure we’ve got your latest mobile number, as we may need you to confirm online card purchases by text message. Don't forget to sign the back of your card.
+  utter_Pin:
+  - text: You can view your debit and credit card PIN on our mobile app. For debit and credit cards, we can send a PIN reminder in the post through online banking, or by visiting a branch. Make sure your address details are up to date before requesting a reminder.
+  utter_Charges:
+  - text: There are 3 types of default fees you could face – late fees, over-limit fees and returned payment fees. If you're late paying your minimum monthly payment, you'll be charged a late fee of £12, which will appear on your next statement. If you receive a refund to your account, it won’t count towards the minimum monthly payment. You must still pay the full minimum amount, unless the refund reduces the balance to less than the minimum payment. How you could avoid a late fee? To avoid a late payment fee, you could set up a Direct Debit. This means that the payment would be taken automatically each month. You can choose to set a Direct Debit to pay the minimum amount, a fixed amount or the full balance. Plus, you can also make additional payments as well as having a Direct Debit. Set up a Direct Debit. OVER-LIMIT FEE £12. If you go over your agreed credit limit, you'll be charged an over-limit fee of £12, which will appear on your next statement. We'll apply the fee when you're first over the limit in any month. How you could avoid an over-limit fee? To avoid going over your agreed credit limit, you could review your current limit and consider asking us to increase it. Think carefully about whether you need a higher limit, as this could increase the risk of borrowing too much, which could cost you more or take longer to pay off. Change your credit limit. RETURNED PAYMENT FEE £5. If a payment from your Direct Debit or cheque is rejected, you'll be charged a returned payment fee of £5, which will appear on your next statement. How you could avoid a returned payment fee? A returned payment fee could be due to insufficient funds in your account. You could consider changing the date of your statement and payment date, so that it's on a more convenient day of the month for you.
+  utter_Disputes_options:
+  - text: "Would you like to know about"
+    buttons:
+      - title: "New dispute"
+        payload: /options_disputes_ND
+      - title: "Check an existing dispute"
+        payload: /options_disputes_ED
+      - title: "Different query"
+        payload: /options_Different_query
+  utter_Ndispute:
+  - text: Log on to our Mobile Banking app. Select the Support tab and select the Query a transaction menu option. Select the current account then transaction you need more information about. Review the enhanced transaction details, including retailer name and logo. Select Get help and follow the on-screen instructions to raise your dispute
+  utter_Edispute:
+  - text: In most cases you’ll need to try to solve the problem by contacting the retailer first. However, if you’ve not been able to do so and have raised a dispute with us, this is what happens next. The retailer and their bank can respond with comments and evidence of their own. Once we raise your dispute with the retailer, their investigation can take up to 45 days. We may contact you at a later date and ask for more information to continue with your dispute. This could be evidence of your attempts to cancel the transaction or return the goods. A receipt or invoice. The retailer's terms and conditions. Evidence of the retailer’s rejection of your dispute. Most disputes will be resolved within 3 months of the date we raise them with the retailer.
+  utter_online_card_payment:
+  - text: Some online retailers may not be ready to request these checks and you not be ready to request these checks and you may find that a payment is declined, even if there are no issues with your account or your card. Or if the online retailer hasn't asked for payment confirmation and it has been declined, please contact them directly to ask for other ways they can accept your payment.
+  utter_money_limit:
+  - text: No transaction or daily limit between your accounts. A company that appears on our company look-up list £10,000 per payee from accounts of your accounts. Payments to personal or other business accounts £25,000 from each of your accounts.
+  utter_difference_available_ledger_balance:
+  - text: Your available balance includes pending transactions, for examples, when you use your debit card to buy goods or services. This gives you a more up-to-date view of the funds you actually have available than your Account balance. Your account balance is also known as your ledger balance and shows your balance without pending transactions; this can still be found in your account by dragging down your transactions to show additional account information.
+  utter_pending_and_upcoming_transactions:
+  - text: Upcoming transactions are due to be paid into or out of your account within the next few working days.
+  - text: Pending transactions are debit card payments that have not been fully processed by the merchant. These transactions reflect in your available balance which is now used as your main balance. You can see your balance without pending transactions, also known as your ledge balance, by dragging your transactions down to reveal more account details.
+  utter_Standing_orders:
+  - text: To view your standing orders, tap on the revelant account and select manage bills. You can also cancel an existing standing order by tapping on it.
+  utter_Direct_debits:
+  - text: To view your Direct Debits, tap on the revelant account and select manage bills. You can also cancel an Direct Debit order by tapping on it.
+  utter_change_contact_details:
+  - text: To change your email address, phone number, home and correspondence address in the app, follow these steps. Tap the profile avatar in the top right hand corner. Select the first tile with your name and then Contact details. Select the details you want to change and follow the onscreen instructions.
+  utter_dispute_transaction:
+  - text: If you don't recognise a transaction or think the amount charged is incorrect, a good first step is to check our guidance. This explains some of the reasons why a transaction can look unfimiliar at firs and may help you to identify it.
+  utter_IBAN_BIC:
+  - text: You can fing your International Bank Account Number (IBAN) and Bank Identifier Code (BIC) on your statements.
+  utter_Cash_machine:
+  - text: To find the nearest place you can withdraw money for free use the Cash Locator Tool. It's easy to use, just enter the town or postcode to search for nearby cash machines. It will tell you if it is free to use or if there's charge as well as whether audio assistance and wheelchair access are available.
+  utter_Overdrafts:
+  - text: An overdraft is a way of borrowing money through your current account. You’ll go into an overdraft if you make a withdrawal or a purchase that takes you below your available balance. In other words, if your account goes below £0, you’re into your overdraft. If you've agreed an overdraft limit with us in advance, it's known as an arranged overdraft. If you haven't – or if you've gone past your arranged limit – it's known as an unarranged overdraft. Most of our accounts come with an interest-free buffer. If you borrow more than this, you'll need to pay interest on the amount you've borrowed.
+  utter_Current_Accounts:
+  - text: A current account enables you to deposit, hold, withdraw and transfer money. It can also give you access to online banking and secure banking apps, which help you manage your money. In some countries and regions, a current account is also known as a transaction account.
+  utter_International_Services:
+  - text: To send money online, over the phone or in a branch, you'll need the amount you're sending you can pay in sterling or in the local currency. The name on the account you’re sending the money to you'll need to include this in the payment instruction. The bank code (SWIFT or BIC) of the bank you’re sending money to. The IBAN or account number of the person or business you’re sending money to this has the information we need to send a payment overseas the address of the person or business you’re sending money to. The address of the bank you’re sending money to. A reason for the payment - this helps us avoid delays. A payment reference.
+  utter_thanks:
+  - text: You're welcome.
+  utter_goodbye:
+  - text: Bye!
+  utter_deny:
+  - text: Thankyou for your time!
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+
+actions:
+- action_save_firstname
+- action_save_lastname
+- action_store
+- utter_greet
+- utter_choice
+- options_Different_query

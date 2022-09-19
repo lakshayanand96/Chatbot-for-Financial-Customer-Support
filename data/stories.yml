@@ -1,0 +1,3161 @@
+version: "3.0"
+
+stories:
+
+- story: path11
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_Cards
+  - action: utter_cards
+  - action: utter_deny
+
+
+- story: path12
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_cheques
+  - action: utter_cheques
+  - action: utter_deny
+
+- story: path13
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_fees
+  - action: utter_fees
+  - action: utter_deny
+
+- story: path14
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_savings
+  - action: utter_Savings
+
+- story: path15
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_statements
+  - action: utter_statements
+
+- story: path16_product
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Product_Lending
+  - action: utter_Product_options
+  - intent: options_savings
+  - action: utter_Savings
+
+- story: path16_product2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Product_Lending
+  - action: utter_Product_options
+  - intent: options_Personal_loan
+  - action: utter_Loans
+
+- story: path16_product3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Product_Lending
+  - action: utter_Product_options
+  - intent: options_Credit_Cards
+  - action: utter_Credit_cards
+
+- story: path16_product4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Product_Lending
+  - action: utter_Product_options
+  - intent: Mortgages
+  - action: utter_Mortgages
+
+- story: path16_product5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Product_Lending
+  - action: utter_Product_options
+  - intent: options_Fee/charges
+  - action: utter_Fees_Charges
+
+- story: path16_payment1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Pay_transfer
+  - action: utter_Pay_transfer
+
+- story: path16_payment2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Declines
+  - action: utter_Declines
+
+- story: path16_payment3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ND
+  - action: utter_Ndispute
+
+- story: path16_payment31
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ED
+  - action: utter_Edispute
+
+- story: path16_payment4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: Standing_orders
+  - action: utter_Standing_orders
+
+- story: path16_payment5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_cheques
+  - action: utter_cheques
+
+- story: path16_Cards1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Cards_AC
+  - action: utter_Actiavte_card
+
+- story: path16_Cards2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Cards_Pin
+  - action: utter_Pin
+
+- story: path16_Cards3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Declines
+  - action: utter_Declines
+
+- story: path16_Cards41
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ND
+  - action: utter_Ndispute
+
+- story: path16_Cards42
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ED
+  - action: utter_Edispute
+
+- story: path16_Cards5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_charges
+  - action: utter_Charges
+
+- story: path16_Disputes1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ND
+  - action: utter_Ndispute
+
+- story: path16_Disputes2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ED
+  - action: utter_Edispute
+
+- story: path21
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Product_Lending
+  - action: utter_Product_options
+  - intent: options_savings
+  - action: utter_Savings
+
+- story: path22
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Product_Lending
+  - action: utter_Product_options
+  - intent: options_Personal_loan
+  - action: utter_Loans
+
+- story: path23
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Product_Lending
+  - action: utter_Product_options
+  - intent: options_Credit_Cards
+  - action: utter_Credit_cards
+
+- story: path24
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Product_Lending
+  - action: utter_Product_options
+  - intent: Mortgages
+  - action: utter_Mortgages
+
+- story: path25
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Product_Lending
+  - action: utter_Product_options
+  - intent: options_Fee/charges
+  - action: utter_Fees_Charges
+
+- story: path26_Account1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_product_Lending
+  - action: utter_Product_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_Credit_Cards
+  - action: utter_cards
+
+- story: path26_Account2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_product_Lending
+  - action: utter_Product_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_cheques
+  - action: utter_cheques
+
+- story: path26_Account3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_product_Lending
+  - action: utter_Product_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_fees
+  - action: utter_fees
+
+- story: path26_Account4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_product_Lending
+  - action: utter_Product_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_savings
+  - action: utter_Savings
+
+- story: path26_Account5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_product_Lending
+  - action: utter_Product_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_statements
+  - action: utter_statements
+
+- story: path26_Payments1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_product_Lending
+  - action: utter_Product_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Pay_transfer
+  - action: utter_Pay_transfer
+
+- story: path26_Payments2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_product_Lending
+  - action: utter_Product_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Declines
+  - action: utter_Declines
+
+- story: path26_Payments31
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_product_Lending
+  - action: utter_Product_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ND
+  - action: utter_Ndispute
+
+- story: path26_Payments32
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_product_Lending
+  - action: utter_Product_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ED
+  - action: utter_Edispute
+
+- story: path26_Payments4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_product_Lending
+  - action: utter_Product_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: Standing_orders
+  - action: utter_Standing_orders
+
+- story: path26_Payments5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_product_Lending
+  - action: utter_Product_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_cheques
+  - action: utter_cheques
+
+- story: path26_Cards1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_product_Lending
+  - action: utter_Product_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Cards_AC
+  - action: utter_Actiavte_card
+
+- story: path26_Cards2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_product_Lending
+  - action: utter_Product_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Cards_Pin
+  - action: utter_Pin
+
+- story: path26_Cards3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_product_Lending
+  - action: utter_Product_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Decline
+  - action: utter_Declines
+
+- story: path26_Cards41
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_product_Lending
+  - action: utter_Product_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ND
+  - action: utter_Ndispute
+
+- story: path26_Cards42
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_product_Lending
+  - action: utter_Product_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ED
+  - action: utter_Edispute
+
+- story: path26_Cards5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_product_Lending
+  - action: utter_Product_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_charges
+  - action: utter_Charges
+
+- story: path26_Disputes1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_product_Lending
+  - action: utter_Product_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ND
+  - action: utter_Ndispute
+
+- story: path26_Disputes2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_product_Lending
+  - action: utter_Product_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ED
+  - action: utter_Edispute
+
+- story: path31
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Pay_transfer
+  - action: utter_Pay_transfer
+
+- story: path32
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Declines
+  - action: utter_Declines
+
+- story: path331
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ND
+  - action: utter_Ndispute
+
+- story: path332
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ED
+  - action: utter_Edispute
+
+- story: path34
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: Standing_orders
+  - action: utter_Standing_orders
+
+- story: path35
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_cheques
+  - action: utter_cheques
+
+- story: path36_Account1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_Cards
+  - action: utter_cards
+
+- story: path36_Account2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_cheques
+  - action: utter_cheques
+
+- story: path36_Account3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_fees
+  - action: utter_fees
+
+- story: path36_Account4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_savings
+  - action: utter_Savings
+
+- story: path36_Account5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_statements
+  - action: utter_statements
+
+- story: path36_Product1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Product_Lending
+  - action: utter_Product_options
+  - intent: options_savings
+  - action: utter_Savings
+
+- story: path36_Product2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Product_Lending
+  - action: utter_Product_options
+  - intent: options_Personal_loan
+  - action: utter_Loans
+
+- story: path36_Product3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Product_Lending
+  - action: utter_Product_options
+  - intent: options_Credit_Cards
+  - action: utter_Credit_cards
+
+- story: path36_Product4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Product_Lending
+  - action: utter_Product_options
+  - intent: Mortgages
+  - action: utter_Mortgages
+
+- story: path36_Product5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Product_Lending
+  - action: utter_Product_options
+  - intent: options_Fee/charges
+  - action: utter_Fees_Charges
+
+- story: path36_Cards1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Cards_AC
+  - action: utter_Actiavte_card
+
+- story: path36_Cards2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Cards_Pin
+  - action: utter_Pin
+
+- story: path36_Cards3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Declines
+  - action: utter_Declines
+
+- story: path36_Cards41
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ND
+  - action: utter_Ndispute
+
+- story: path36_Cards42
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ED
+  - action: utter_Edispute
+
+- story: path36_Cards5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_charges
+  - action: utter_Charges
+
+- story: path36_Disputes1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ND
+  - action: utter_Ndispute
+
+- story: path36_Disputes2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ED
+  - action: utter_Edispute
+
+- story: path41
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Cards_AC
+  - action: utter_Actiavte_card
+
+- story: path42
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Cards_Pin
+  - action: utter_Pin
+
+- story: path43
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Declines
+  - action: utter_Declines
+
+- story: path441
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ND
+  - action: utter_Ndispute
+
+- story: path442
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ED
+  - action: utter_Edispute
+
+- story: path45
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_charges
+  - action: utter_Charges
+
+- story: path46_Account1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_Cards
+  - action: utter_cards
+
+- story: path46_Account2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_cheques
+  - action: utter_cheques
+
+- story: path46_Account3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_fees
+  - action: utter_fees
+
+- story: path46_Account4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_savings
+  - action: utter_Savings
+
+- story: path46_Account5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_statements
+  - action: utter_statements
+
+- story: path46_Product1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Product_Lending
+  - action: utter_Product_options
+  - intent: options_savings
+  - action: utter_Savings
+
+- story: path46_Product2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Product_Lending
+  - action: utter_Product_options
+  - intent: options_Personal_loan
+  - action: utter_Loans
+
+- story: path46_Product3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Product_Lending
+  - action: utter_Product_options
+  - intent: options_Credit_Cards
+  - action: utter_Credit_cards
+
+- story: path46_Product4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Product_Lending
+  - action: utter_Product_options
+  - intent: Mortgages
+  - action: utter_Mortgages
+
+- story: path46_Product5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Product_Lending
+  - action: utter_Product_options
+  - intent: options_Fee/charges
+  - action: utter_Fees_Charges
+
+- story: path46_Payments1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Pay_transfer
+  - action: utter_Pay_transfer
+
+- story: path46_Payments2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Declines
+  - action: utter_Declines
+
+- story: path46_Payments31
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ND
+  - action: utter_Ndispute
+
+- story: path46_Payments32
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ED
+  - action: utter_Edispute
+
+- story: path46_Payments4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: Standing_orders
+  - action: utter_Standing_orders
+
+- story: path46_Payments5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_cheques
+  - action: utter_cheques
+
+- story: path46_Disputes1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ND
+  - action: utter_Ndispute
+
+- story: path46_Disputes2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ED
+  - action: utter_Edispute
+
+- story: path551
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ND
+  - action: utter_Ndispute
+
+- story: path552
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ED
+  - action: utter_Edispute
+
+- story: path53_Account1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_Cards
+  - action: utter_cards
+
+- story: path53_Account2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_cheques
+  - action: utter_cheques
+
+- story: path53_Account3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_fees
+  - action: utter_fees
+
+- story: path53_Account4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_savings
+  - action: utter_Savings
+
+- story: path53_Account5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_account
+  - action: utter_options_account
+  - intent: options_statements
+  - action: utter_statements
+
+- story: path53_Product1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Product_Lending
+  - action: utter_Product_options
+  - intent: options_savings
+  - action: utter_Savings
+
+- story: path53_Product2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Product_Lending
+  - action: utter_Product_options
+  - intent: options_Personal_loan
+  - action: utter_Loans
+
+- story: path53_Product3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Product_Lending
+  - action: utter_Product_options
+  - intent: options_Credit_Cards
+  - action: utter_Credit_cards
+
+- story: path53_Product4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Product_Lending
+  - action: utter_Product_options
+  - intent: Mortgages
+  - action: utter_Mortgages
+
+- story: path53_Product5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Product_Lending
+  - action: utter_Product_options
+  - intent: options_Fee/charges
+  - action: utter_Fees_Charges
+
+- story: path53_Payments1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Pay_transfer
+  - action: utter_Pay_transfer
+
+- story: path53_Payments2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_Declines
+  - action: utter_Declines
+
+- story: path53_Payments31
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ND
+  - action: utter_Ndispute
+
+- story: path53_Payments32
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ED
+  - action: utter_Edispute
+
+- story: path53_Payments4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: Standing_orders
+  - action: utter_Standing_orders
+
+- story: path53_Payments5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Payments
+  - action: utter_Payments_options
+  - intent: options_cheques
+  - action: utter_cheques
+
+- story: path53_Cards1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Cards_AC
+  - action: utter_Actiavte_card
+
+- story: path53_Cards2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Cards_Pin
+  - action: utter_Pin
+
+- story: path53_Cards3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_Declines
+  - action: utter_Declines
+
+- story: path53_Cards41
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ND
+  - action: utter_Ndispute
+
+
+- story: path53_Cards42
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_disputes_ED
+  - action: utter_Edispute
+
+- story: path53_Cards5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: first_name
+    entities:
+     - firstname: "firstname"
+  - action: action_save_firstname
+  - action: utter_LName
+  - intent: last_name
+    entities:
+     - lastname: "lastname"
+  - action: action_save_lastname
+  - intent: storedatabase
+  - action: action_store
+  - action: utter_intro
+  - action: utter_choice
+  - intent: options_disputes
+  - action: utter_Disputes_options
+  - intent: options_Different_query
+  - action: utter_choice
+  - intent: options_Cards
+  - action: utter_Cards_options
+  - intent: options_charges
+  - action: utter_Charges
+
+
+- story: online_card_payment_path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: online_card_payment
+  - action: utter_online_card_payment
+
+- story: money_limit_path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: money_limit
+  - action: utter_money_limit
+
+- story: difference_available_ledger_balance_path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: difference_available_ledger_balance
+  - action: utter_difference_available_ledger_balance
+
+- story: pending_and_upcoming_transactions_path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: pending_and_upcoming_transactions
+  - action: utter_pending_and_upcoming_transactions
+
+- story: Direct_debits_path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Direct_debits
+  - action: utter_Direct_debits
+
+- story: Standing_orders_path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Standing_orders
+  - action: utter_Standing_orders
+
+- story: change_contact_details_path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: change_contact_details
+  - action: utter_change_contact_details
+
+- story: dispute_transaction_path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: dispute_transaction
+  - action: utter_dispute_transaction
+
+- story: IBAN_BIC_path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: IBAN_BIC
+  - action: utter_IBAN_BIC
+
+- story: Cash_machine_path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Cash_machine
+  - action: utter_Cash_machine
+
+- story: thanks_path
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+
+- story: goodbye_path
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: bot_challenge_path
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+

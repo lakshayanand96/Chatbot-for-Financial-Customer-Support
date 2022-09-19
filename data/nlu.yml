@@ -1,0 +1,395 @@
+version: "3.0"
+nlu:
+- intent: online_card_payment
+  examples: |
+    - Why has my online card payment been declined?
+    - declined online card payment
+    - declined card payment
+    - card payment declined
+    - card declined
+    - declined card
+
+- intent: money_limit
+  examples: |
+    - How much money can i send via the app?
+    - money limit
+    - transfer limit
+    - app tranfer limit
+    - money tranfer limit
+
+- intent: difference_available_ledger_balance
+  examples: |
+    - what is the difference between my available balance and ladge balance?
+    - what is available balance
+    - what is ledge balance
+    - available balance
+    - ledge balance
+
+- intent: pending_and_upcoming_transactions
+  examples: |
+    - what is inclued in my pending and upcoming transactions?
+    - pending transactions
+    - upcoming transactions
+    - what is pending and upcoming transactions
+    - pending and upcoming transactions
+
+- intent: Direct_debits
+  examples: |
+    - How do i manage my Direct Debits?
+    - Direct Debits
+    - managing direct debits
+
+- intent: Standing_orders
+  examples: |
+    - How do i manage my standing orders?
+    - Standing Orders
+    - managing standing orders
+    - Standing Order/DD
+    - DD
+
+- intent: change_contact_details
+  examples: |
+    - How do i change my contact details?
+    - change contact details
+    - contact details
+
+- intent: dispute_transaction
+  examples: |
+    - what happens if i don't recognise or want to dispute a card transaction?
+    - dispute card transactions
+    - doesn't recognise transactions
+    - i don't recognise transactions
+    - transactions dispute
+    - non recogniable transactions
+
+- intent: IBAN_BIC
+  examples: |
+    - Where can i find my IBAN/BIC ?
+    - IBAN Number
+    - BIC Number
+    - BIC
+    - IBAN
+    - IBAN/BIC
+
+
+- intent: Cash_machine
+  examples: |
+    - How do i find my nearest free to use cash machine?
+    - cash machine
+    - free to use cash machine
+    - nearest cash machine
+    - free cash machine
+    - free nearest cash machine
+
+
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: thanks
+  examples: |
+    - Thanks a lot.
+    - Thanks
+    - Thank you
+
+- intent: first_name
+  examples: |
+    - My first name is [Lakshay](firstname)
+    - you can call me [Vinay](firstname)
+    - It's [Aashish](firstname)
+    - [Shashank](firstname) this side
+    - [Jaita](firstname)
+    - [Rahul](firstname)
+    - [Simranjeet](firstname)
+    - [Shaurya](firstname)
+    - [Riya](firstname)
+    - [Lakshay](firstname)
+    - [Garima](firstname)
+
+- intent: last_name
+  examples: |
+    - My last name is [Anand](lastname)
+    - you can call me [Vishwakarma](lastname)
+    - It's [Sharma](lastname)
+    - [Yadav](lastname) this side
+    - [Karla](lastname)
+    - [Sethi](lastname)
+    - [Singh](lastname)
+    - [Sethi](lastname)
+    - [Bakshi](lastname)
+    - [Anand](lastname)
+    - [Chadha](lastname)
+
+   
+- intent: storedatabase
+  examples: |
+    - yes I want to store my information
+    - yes store my current information
+    - yes store info
+    - yes dump the info
+    - save my info
+    - store my data
+    - yes you may store
+    - yes you can save
+    - yes
+    - sure
+
+- intent: Credit_cards
+  examples: |
+    - What are different credits cards available?
+    - kinds of credit cards
+    - i want buy credit card
+    - Categories of credit cards
+    - available credit cards
+    - credit cards plans
+    - Apply for credit cards
+
+- intent: Loans
+  examples: |
+    - Loans
+    - Apply for loans
+    - Personal loan
+    - i want to loan
+    - i want to apply for loan
+    - Motor vehicle loan
+    - Motor vehicle
+    - i want to apply for Motor vehicle loan
+    - Debt consolidation loan
+    - Debt consolidation
+    - i want to apply for Debt consolidation loan
+    - Debt consolidation from diffirent bank loan
+    - i want to apply for Debt consolidation from diffirent bank
+    - Home improvements loan
+    - Home improvements
+    - i want to apply for Home improvements loan
+    - Holidays loan
+    - Holidays
+    - i want to apply for Holidays loan
+    - Furniture and fittings loan
+    - Furniture and fittings
+    - i want to apply for Furniture and fittings loan
+    - Annual commitments loan
+    - Annual commitments
+    - i want to apply for other needs loan
+    - other needs loan
+    - other needs
+    - i want to apply for Annual commitments loan
+
+- intent: Overdrafts
+  examples: |
+    - How an overdrafts works
+    - Will using or applying for an overdraft affect my credit rating?
+    - What's the difference between an arranged and an unarranged overdreft?
+    - Are there any fees for using an overdraft?
+    - How much does an unarranged overdraft cost?
+    - How do overdraft text alert work?
+    - What should i do if I'm struggling to pay off my overdraft?
+    - Apply for an arranged overdraft
+    - Apply for overdraft
+    - overdraft
+
+
+- intent: Mortgages
+  examples: |
+    - How to apply for for a mortgage?
+    - Mortgage
+    - Decision in Priciple
+    - mortgages application
+    - Apply with a mortgage adviser
+    - mortgage adviser
+
+- intent: Savings
+  examples: |
+    - Apply for regular saving account
+    - regular saving account
+    - i want to open regular saving account
+    - Apply for easy access saving account
+    - easy access saving account
+    - i want to open easy access saving account
+    - Apply for individual savings account
+    - individual savings account
+    - i want to open individual savings account
+    - Apply for Fixed rate saver account
+    - Fixed rate saver account
+    - i want to open Fixed rate saver account
+    - Apply for children's saving account
+    - children's saving account
+    - i want to open children's saving account
+    - Compare our saving accounts
+
+
+- intent: Current_Accounts
+  examples: |
+    - Apply for advance bank account
+    - advance bank account
+    - i want to open advance bank account
+    - Apply for premier bank account
+    - premier bank account
+    - i want to open premier bank account
+    - Apply for bank account
+    - bank account
+    - i want to open bank account
+    - Apply for MyMoney children's bank account
+    - MyMoney children's bank account
+    - i want to open MyMoney children's bank account
+    - Compare all current accounts
+    - Currents accounts
+    - Explore current accounts
+
+- intent: International_Services
+  examples: |
+    - International payments
+    - I want to send money outside UK
+    - tranfer money to other country
+    - Currency holding account
+    - Foreign currency
+    - Currency change rate
+    - Travel money
+    - can i use my debit card outside uk?
+    - can i use my debit card in other country?
+    - can i use my credit card outside uk?
+    - can i use my credit card in other country?
+    - can i use my card abroad ?
+    - fee on using debit card outside uk
+    - fee on using credit card outside uk
+    - international payments fee
+    - international payments conversion fee
+
+- intent: options_account
+  examples: |
+    - Account servicing
+    - Account
+
+- intent: options_Product_Lending
+  examples: |
+    - Product & Lending
+    - Product
+    - Lending
+
+- intent: options_cheques
+  examples: |
+    - Cheques
+
+- intent: options_Pay_transfer
+  examples: |
+    - Pay
+    - Transfer
+    - Pay & Transfer
+
+- intent: options_Payments
+  examples: |
+    - Payments
+
+- intent: options_Declines
+  examples: |
+    - Declines
+
+- intent: options_disputes
+  examples: |
+    - Disputes
+
+- intent: options_disputes_ND
+  examples: |
+    - New dispute
+    - Check an existing dispute
+
+- intent: options_disputes_ED
+  examples: |
+    - Check an existing dispute
+
+- intent: options_fees
+  examples: |
+    - Fees
+
+- intent: options_Fee_charges
+  examples: |
+    - Fees/Charges
+
+- intent: options_charges
+  examples: |
+    - Charges
+
+- intent: options_savings
+  examples: |
+    - Savings
+
+- intent: options_statements
+  examples: |
+    - Statements
+
+- intent: options_Cards
+  examples: |
+    - Cards
+
+- intent: options_Credit_Cards
+  examples: |
+    - Credit Cards
+
+- intent: options_Cards_AC
+  examples: |
+    - Activate card
+    - Activate
+
+- intent: options_Cards_Pin
+  examples: |
+    - PIN reminder
+    - PIN
+    - reminder
+
+- intent: options_Personal_loan
+  examples: |
+    - Personal Loan
+
+- intent: options_Different_query
+  examples: |
+    - Different query
